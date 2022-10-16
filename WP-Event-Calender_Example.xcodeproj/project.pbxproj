@@ -13,6 +13,10 @@
 		BB8C0BC628FCA26B00CDC8AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8C0BC428FCA26B00CDC8AA /* Main.storyboard */; };
 		BB8C0BC828FCA26C00CDC8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8C0BC728FCA26C00CDC8AA /* Assets.xcassets */; };
 		BB8C0BCB28FCA26C00CDC8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8C0BC928FCA26C00CDC8AA /* LaunchScreen.storyboard */; };
+		BB8C0BD428FCA3C200CDC8AA /* Termine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8C0BD328FCA38100CDC8AA /* Termine.swift */; };
+		BB8C0BD628FCA40100CDC8AA /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8C0BD528FCA40100CDC8AA /* EventCell.swift */; };
+		BB8C0BD828FCA47100CDC8AA /* HTMLdecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8C0BD728FCA47100CDC8AA /* HTMLdecode.swift */; };
+		BB8C0BDA28FCA4C500CDC8AA /* EventsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8C0BD928FCA4C500CDC8AA /* EventsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BB8C0BC728FCA26C00CDC8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB8C0BCA28FCA26C00CDC8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB8C0BCC28FCA26C00CDC8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8C0BD328FCA38100CDC8AA /* Termine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Termine.swift; sourceTree = "<group>"; };
+		BB8C0BD528FCA40100CDC8AA /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		BB8C0BD728FCA47100CDC8AA /* HTMLdecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLdecode.swift; sourceTree = "<group>"; };
+		BB8C0BD928FCA4C500CDC8AA /* EventsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,24 @@
 				BB8C0BBE28FCA26B00CDC8AA /* AppDelegate.swift */,
 				BB8C0BC028FCA26B00CDC8AA /* SceneDelegate.swift */,
 				BB8C0BC228FCA26B00CDC8AA /* ViewController.swift */,
+				BB8C0BD928FCA4C500CDC8AA /* EventsDetailViewController.swift */,
 				BB8C0BC428FCA26B00CDC8AA /* Main.storyboard */,
 				BB8C0BC728FCA26C00CDC8AA /* Assets.xcassets */,
 				BB8C0BC928FCA26C00CDC8AA /* LaunchScreen.storyboard */,
 				BB8C0BCC28FCA26C00CDC8AA /* Info.plist */,
+				BB8C0BD228FCA37500CDC8AA /* Assets */,
 			);
 			path = "WP-Event-Calender_Example";
+			sourceTree = "<group>";
+		};
+		BB8C0BD228FCA37500CDC8AA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BB8C0BD528FCA40100CDC8AA /* EventCell.swift */,
+				BB8C0BD328FCA38100CDC8AA /* Termine.swift */,
+				BB8C0BD728FCA47100CDC8AA /* HTMLdecode.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8C0BD428FCA3C200CDC8AA /* Termine.swift in Sources */,
 				BB8C0BC328FCA26B00CDC8AA /* ViewController.swift in Sources */,
+				BB8C0BD628FCA40100CDC8AA /* EventCell.swift in Sources */,
 				BB8C0BBF28FCA26B00CDC8AA /* AppDelegate.swift in Sources */,
+				BB8C0BD828FCA47100CDC8AA /* HTMLdecode.swift in Sources */,
+				BB8C0BDA28FCA4C500CDC8AA /* EventsDetailViewController.swift in Sources */,
 				BB8C0BC128FCA26B00CDC8AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,8 +309,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WP-Event-Calender_Example/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WP Event Calendar";
@@ -295,6 +320,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +328,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "wiwaltill.WP-Event-Calender-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,8 +340,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WP-Event-Calender_Example/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WP Event Calendar";
@@ -323,6 +351,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +359,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "wiwaltill.WP-Event-Calender-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
