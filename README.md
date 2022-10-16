@@ -5,7 +5,7 @@ Swift integration of [The Events Calender](https://theeventscalendar.com) plugin
 
 All you have to do is change the URL in the `ViewController`. Insert your own URL here.
 
-```
+``` swift
 guard let url = URL(string: "https://YOUR-URL.com/wp-json/tribe/events/v1/events/?per_page=100")else{return}
 ```
 
