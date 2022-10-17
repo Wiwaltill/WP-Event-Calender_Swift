@@ -9,6 +9,12 @@ All you have to do is change the URL in the `ViewController`. Insert your own UR
 guard let url = URL(string: "https://YOUR-URL.com/wp-json/tribe/events/v1/events/?per_page=100")else{return}
 ```
 
+## Requirements
+
+- iOS 13.0+
+- XCode 13.0+
+- Swift 5.1
+
 ## Modification
 ### Number of posts
 
