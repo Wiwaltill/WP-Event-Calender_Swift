@@ -22,6 +22,4 @@ If you want to change the number of events displayed, simply change the number i
 
 ## License
 
-MIT License
-
-For more information, please see the `LICENSE` file.
+WordPress Event Calendar in Swift is released under the **MIT license**. [See LICENSE](https://github.com/Wiwaltill/WP-Event-Calender_Swift/blob/main/LICENSE) for details.
